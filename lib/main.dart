@@ -52,14 +52,14 @@ class _loadState extends State<load> {
   }
 
 
-  void mess()async{
+  void mass()async{
 
 
     await FirebaseAuth.instance.signInAnonymously();
     await      FirebaseAuth.instance.signOut();
     Future.delayed(Duration(seconds: 2));
 
-    print('doneeeeeeeeeeeeeeeeeee');
+    print('welcome');
 
 
     setState(() {
@@ -74,7 +74,7 @@ class _loadState extends State<load> {
     // TODO: implement initState
     super.initState();
     san();
-    mess();
+    mass();
 
   }
 
